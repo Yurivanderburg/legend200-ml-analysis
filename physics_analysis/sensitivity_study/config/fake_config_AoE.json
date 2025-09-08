@@ -1,0 +1,43 @@
+{
+    "debug":false,
+    "partitions":["config/fake_partitions_AoE.json"],
+    "events":    ["config/fake_events.json"],
+    "output_path": "path/to/output",
+    "overwrite": true,
+    "light_output": false,
+    "bat_fit": {
+        "nsteps": 1e5,
+         "nchains": 5
+    },
+    "plot": { 
+        "fit_and_data": false,
+        "bandfit_and_data": false,
+        "scheme":"red", 
+        "alpha": 0.3
+    },
+    "signal": { 
+        "upper_bound":1000, 
+        "prior": "uniform"
+     },
+    "bkg": {
+        "units": "ckky",
+        "upper_bound": 0.1, 
+        "prior": "uniform",
+        "correlated": {"mode": "none", "range": "none"}
+    },
+    "bkg_only": true,
+    "nuisance": { 
+         "energy_bias": {
+            "fixed": true,
+            "correlated": false
+         },
+         "energy_res": {
+            "fixed": false,
+            "correlated": false
+         },
+         "efficiency" : {
+            "correlated": false,
+            "fixed": false
+            }
+    }
+}
