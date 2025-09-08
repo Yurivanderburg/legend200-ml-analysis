@@ -1,0 +1,27 @@
+/RMG/Geometry/GDMLDisableOverlapCheck true
+/RMG/Geometry/RegisterDetector Germanium V07647A 1105602
+/run/initialize
+
+/process/list Decay
+/process/had/rdm/thresholdForVeryLongDecayTime 1.0e+60 year #This line is very important to simulate 228Th, otherwise it is not possible since this default threshold is 1yr
+
+/RMG/Output/Germanium/AddDetectorForEdepThreshold 1105602
+
+# confinement in fiber (core)
+
+/RMG/Generator/Confine Volume
+/RMG/Generator/Confinement/Physical/AddVolume ^source_inner_.*
+
+
+/RMG/Generator/Select GPS
+/RMG/Output/Germanium/SetEdepCutLow 1500 keV
+/RMG/Output/Germanium/SetEdepCutHigh 1700 MeV
+/gps/particle                ion
+/gps/energy                  0 eV
+/gps/ang/type                iso
+#/gps/ion                     90 228 0  # Th-228 with charge = 0
+/gps/ion                     83 212 0
+/process/had/rdm/nucleusLimits 208 212 81 83 
+/tracking/verbose 0
+/event/verbose 0
+/run/beamOn 2000000000
