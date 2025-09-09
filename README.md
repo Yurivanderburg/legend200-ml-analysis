@@ -15,9 +15,9 @@ as well as data preparation and plotting scripts for the associated thesis work.
 │   └── slurm_jobs/                # SLURM submission .sh files for the python code
 ├── logs/                          # Logging for all python scripts 
 ├── physics_analysis/              # Core physics analysis
-│   ├── psd_efficiency/            # Pulse Shape Discrimination at $Q_{\beta \beta}$
+│   ├── psd_efficiency/            # Pulse Shape Discrimination at Qbb
 │   ├── pulse_simulation/          # Pulse Shape Simulation codes 
-│   └── sensitivity_study/         # Bayesian sensitivity study for $0 \nu \beta \beta$ decay half-life
+│   └── sensitivity_study/         # Bayesian sensitivity study for 0vbb decay half-life
 ├── plotting/                      # *WIP*
 ├── thesis/                        # LaTeX files for the Master's thesis
 ├── defense/                       # LaTeX files for the Master's thesis defense talk
