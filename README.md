@@ -8,20 +8,20 @@ This repository contains the code and utilities used in the
 
 ## Repository Structure
 ```
-├── data_preparation/ # Pre-process data for ML training
-│   ├── configs/ # Configuration files <- **Edit here**
-│   ├── data_prep_utils/ # Utilities for processing data
-│   ├── scripts/ # Scripts <- **Run here**
-│   └── slurm_jobs/ # SLURM submission .sh files for the python code
-├── logs/ # Logging for all python scripts 
-├── physics_analysis/ # Core physics analysis
-│   ├── psd_efficiency/ # Pulse Shape Discrimination at $Q_{\beta \beta}$
-│   ├── pulse_simulation/ # Pulse Shape Simulation codes 
-│   └── sensitivity_study/ # Bayesian sensitivity study for $0 \nu \beta \beta$ decay half-life
-├── plotting/ # *WIP*
-├── thesis/ # LaTeX files for the Master's thesis
-├── defense/ # LaTeX files for the Master's thesis defense talk
-└── utils/ # Various utilities
+├── data_preparation/              # Pre-process data for ML training
+│   ├── configs/                   # Configuration files <- **Edit here**
+│   ├── data_prep_utils/           # Utilities for processing data
+│   ├── scripts/                   # Scripts <- **Run here**
+│   └── slurm_jobs/                # SLURM submission .sh files for the python code
+├── logs/                          # Logging for all python scripts 
+├── physics_analysis/              # Core physics analysis
+│   ├── psd_efficiency/            # Pulse Shape Discrimination at $Q_{\beta \beta}$
+│   ├── pulse_simulation/          # Pulse Shape Simulation codes 
+│   └── sensitivity_study/         # Bayesian sensitivity study for $0 \nu \beta \beta$ decay half-life
+├── plotting/                      # *WIP*
+├── thesis/                        # LaTeX files for the Master's thesis
+├── defense/                       # LaTeX files for the Master's thesis defense talk
+└── utils/                         # Various utilities
 ```
 
 ---
