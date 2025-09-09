@@ -7,7 +7,7 @@ This repository contains the code and utilities used in the
 ---
 
 ## Repository Structure
-
+```
 ├── data_preparation/ # Pre-process data for ML training
 │   ├── configs/ # Configuration files <- **Edit here**
 │   ├── data_prep_utils/ # Utilities for processing data
@@ -22,7 +22,7 @@ This repository contains the code and utilities used in the
 ├── thesis/ # LaTeX files for the Master's thesis
 ├── defense/ # LaTeX files for the Master's thesis defense talk
 └── utils/ # Various utilities
-
+```
 
 ---
 
