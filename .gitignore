@@ -1,0 +1,13 @@
+# Logs 
+**/logs/
+
+Plots/
+
+# Misc python stuff
+**/.idea/
+**/.vscode
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/cache/
+**/metadata/
+**/*.pyc
