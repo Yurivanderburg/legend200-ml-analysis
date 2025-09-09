@@ -56,3 +56,19 @@ Also contains the code for estimating the PSD efficiency at $Q_{\beta \beta}$
 and analysis for the Bayesian sensitivity study to estimate the 
 $0 \nu \beta \beta$ decay half-life of the experiment, based on the PSD 
 efficiencies. 
+
+
+### Plotting
+
+Contains various plots and figures created for the Thesis, for example
+a comparison of various activation functions, the charge collection, etc.
+
+### Thesis
+
+All files (.tex, figures, etc.) for my Master's thesis.
+
+
+### Defense
+
+All files (.tex, figures, etc.) for my Master's talk.
+
