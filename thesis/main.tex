@@ -1,0 +1,145 @@
+% ============================================================
+% Author: Yuri van der Burg
+% Description: Main LaTeX file for my master thesis
+% ============================================================
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[backend=biber, style=phys, citestyle=phys, biblabel=brackets, maxbibnames=5, minbibnames=2]{biblatex}
+\addbibresource{references.bib}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bbold}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{csquotes} % Recommended by the Log (?)
+\usepackage{amsmath}
+% Hypersetup - Add hyperlinks, but remove ugly red boxes
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    citecolor=black,
+    pdftitle={Master Thesis - Yuri van der Burg}
+    }
+\AtEveryBibitem{\clearfield{note}}
+
+
+%--------------------- New commands ---------------------
+\newcommand{\Lagr}{\mathcal{L}}
+\newcommand{\fsl}[1]{{\ooalign{\(#1\)\cr\hidewidth\(/\)\hidewidth\cr}}}
+\newcommand{\refeq}[1]{(\ref{#1})}
+
+\numberwithin{equation}{section} % Makes equations numbered as <chapter>.<equation>
+
+
+%--------------------- Header & Footer ---------------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{13.6pt}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % set the \leftmark
+\fancyhf{}
+\fancyhead[R]{\textit{Yuri van der Burg}} 
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+%--------------------- Recommended by Log ---------------------
+\DeclareUnicodeCharacter{03B2}{$\beta$}
+\DeclareUnicodeCharacter{02B9}{'}
+\begin{document}
+
+
+% ============================================================
+%                     Import chapters
+% ============================================================
+
+%--------------------- Title page ---------------------
+\pagestyle{plain} 
+\input{chapters/00a_title_page}
+
+
+%--------------------- Abstract ---------------------
+\clearpage
+\begin{center}
+\section*{Abstract}
+\end{center}
+\input{chapters/00b_abstract}
+
+
+
+%--------------------- Contents ---------------------
+\clearpage
+\tableofcontents 
+
+
+%--------------------- Introduction ---------------------
+\clearpage
+\pagestyle{fancy} 
+\section{Introduction}
+\label{sec:01_introduction}
+\input{chapters/01_introduction} 
+
+
+%--------------------- Neutrino physics ---------------------
+\clearpage
+\section{Neutrino physics} 
+\label{sec:02_neutrino}
+\input{chapters/02_neutrino} 
+
+
+%--------------------- The LEGEND exp. ---------------------
+\clearpage
+\section{The LEGEND experiment} 
+\label{sec:03_legend}
+\input{chapters/03_legend} 
+
+
+%--------------------- ML & Transformers ---------------------
+\clearpage
+\section{Machine learning principles and Transformer architecture} 
+\markboth{ML principles and Transformer architecture}{ML principles and Transformer architecture}
+\label{sec:04_transformer}
+\input{chapters/04_transformer}
+
+
+%--------------------- PSD with Transformers ---------------------
+\clearpage
+\section{Pulse shape discrimination with Transformers} 
+\markboth{PSD with Transformers}{PSD with Transformers}
+\label{sec:05_PSD_efficiency}
+\input{chapters/05_PSD_efficiency} 
+
+
+%--------------------- Sensitivity study ---------------------
+\clearpage
+\section{Sensitivity study for the \texorpdfstring{$0 \nu \beta \beta$ decay}{}}
+\label{sec:06_Sensitivity}
+\input{chapters/06_sensitivity} 
+
+
+%--------------------- Conclusion & Outlook ---------------------
+\clearpage
+\section{Conclusion and outlook} 
+\label{sec:07_conculsion}
+\input{chapters/07_conclusion}
+
+%--------------------- Acknowledgements ---------------------
+\clearpage
+\pagestyle{plain}
+\begin{center}
+\section*{Acknowledgements}
+\end{center}
+\input{chapters/00c_acknowledgements}
+
+
+%--------------------- Bibliography ---------------------
+\clearpage
+\pagestyle{plain} % or 'empty' if you want no header/footer at all
+\printbibliography
+\end{document}

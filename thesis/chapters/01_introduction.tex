@@ -1,0 +1,22 @@
+
+Neutrino physics lies at the forefront of modern particle physics, addressing some of the most fundamental questions about the nature of matter and the evolution of the universe. One of the most compelling processes in this context is neutrinoless double beta ($0 \nu \beta \beta$) decay. 
+Its observation would confirm that neutrinos are Majorana particles, with profound implications for our understanding of fermion mass generation. As a direct consequence, it would imply the violation of lepton number -- a necessary condition for baryogenesis via leptogenesis, which may explain the observed matter-antimatter asymmetry in the universe. 
+While the sensitivity of $0 \nu \beta \beta$ decay to the absolute neutrino mass scale is model-dependent, a null result at high exposure would still provide strong and complementary constraints, especially when combined with limits from cosmology and beta-decay experiments. The process would appear as a monoenergetic peak at $Q_{\beta \beta}$. To search for this rare process with the required sensitivity, the LEGEND experiment was conceived as a phased program, with LEGEND-200 now operational and using modular arrays of high-purity germanium (HPGe) detectors enriched in $^{76}$Ge. 
+To reach its background goal of $10^{-5}$~counts/(keV$\cdot$kg$\cdot$yr), LEGEND combines ultra-clean detector materials with powerful analysis techniques. A crucial element in this effort is pulse shape discrimination (PSD), which enables the rejection of multi-site and surface background events by analyzing the shape of recorded waveforms. 
+Traditionally, PSD relies on hand-engineered features such as the ratio between area and energy (A/E). However, such approaches can be sensitive to electronic noise and calibration drifts, and may not fully exploit all the discriminative information in the waveform. 
+This motivates the use of machine learning techniques -- particularly Transformer architectures -- which employ self-attention mechanisms to model long-range dependencies in sequential data, enabling the automatic extraction of rich, high-dimensional correlations from raw waveform data. Such models may improve discrimination performance beyond conventional methods.
+
+\noindent The structure of this thesis is as follows: 
+
+Chapter~\ref{sec:02_neutrino} establishes the theoretical motivation for this work. It introduces neutrinos within and beyond the Standard Model, motivating the search for neutrinoless double beta decay as a probe of the Majorana nature of neutrinos. The chapter concludes by summarizing the landscape of current and future neutrino experiments. 
+
+Chapter~\ref{sec:03_legend} addresses the experimental realization of such searches in the LEGEND experiment. It explains how HPGe detectors are used to achieve the required sensitivity, focusing on signal formation and the challenge of background suppression. Pulse shape discrimination is introduced as a key strategy, and the chapter concludes with an overview of the experiment's calibration procedures. 
+
+Chapter~\ref{sec:04_transformer} covers the machine learning concepts relevant to this work, focusing on deep learning. It justifies applying deep learning to PSD and motivates the use of Transformers as particularly well-suited for waveform data. The chapter concludes with a discussion of the Transformer architecture and the specific model used in this thesis. 
+
+Chapter~\ref{sec:05_PSD_efficiency} describes the practical implementation of a Transformer-based PSD method. It details the LEGEND-200 data processing, the preparation of training data for the Transformer models, their configurations, and their performance. The extraction of PSD efficiencies at $Q_{\beta \beta}$ is also described, and an overview of the current status of pulse shape simulation in LEGEND-200 is presented. The chapter concludes with a brief summary of the key results. 
+
+Chapter~\ref{sec:06_Sensitivity} presents the Bayesian sensitivity study used to quantify the impact of the PSD methods on the attainable $0 \nu \beta \beta$ half-life. It introduces the statistical framework and outlines the procedure used in this work to translate detector performance into projected half-life sensitivities. It concludes with a concise summary of the results. 
+
+
+The thesis concludes with a discussion of the results, including limitations and possible directions for further improving PSD methods.
