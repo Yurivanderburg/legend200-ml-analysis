@@ -1,8 +1,5 @@
 """
-Calculate pulse shape discrimination efficiency for 2vbb events. 
-Two windows are used:
-1) [1000, 1300] keV
-2) [1530, 1635] keV \ (42K gamma lines)
+Calculate pulse shape discrimination efficiency double escape peaks.
 """
 
 
