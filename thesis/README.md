@@ -2,10 +2,10 @@
 
 This repository contains the LaTeX source code, figures, and compiled PDF of my master's thesis:
 
-> **Title:** *Data-Driven Analysis for Improved Signal Detection in LEGEND-200*  
-> **Author:** Yuri van der Burg 
-> **Institution:** University of Zurich, Department of Physics  
-> **Date:** August, 2025
+> **Title:** *Data-Driven Analysis for Improved Signal Detection in LEGEND-200* <br>
+> **Author:** Yuri van der Burg <br>
+> **Institution:** University of Zurich, Department of Physics <br>
+> **Date:** August, 2025 <br>
 
 ---
 
