@@ -1,8 +1,8 @@
 # LEGEND-200 ML Analysis
 
 This repository contains the code and utilities used in the 
-**LEGEND-200 machine learning–based pulse-shape discrimination (PSD) efficiency and sensitivity studies**
-, as well as data preparation and plotting scripts for the associated thesis work.
+**LEGEND-200 machine learning–based pulse-shape discrimination (PSD) efficiency and sensitivity studies**, 
+as well as data preparation and plotting scripts for the associated thesis work.
 
 ---
 
