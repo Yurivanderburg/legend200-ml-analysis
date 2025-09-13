@@ -18,8 +18,8 @@ as well as data preparation and plotting scripts for the associated thesis work.
 │   ├── psd_efficiency/            # Pulse Shape Discrimination at Qbb
 │   ├── pulse_simulation/          # Pulse Shape Simulation codes 
 │   └── sensitivity_study/         # Bayesian sensitivity study for 0vbb decay half-life
-├── plotting/                      # *WIP*
 ├── thesis/                        # LaTeX files for the Master's thesis
+├── thesis_figures/                # Various Figures and Plots for the thesis
 ├── defense/                       # LaTeX files for the Master's thesis defense talk
 └── utils/                         # Various utilities
 ```
@@ -58,17 +58,14 @@ $0 \nu \beta \beta$ decay half-life of the experiment, based on the PSD
 efficiencies. 
 
 
-### Plotting
-
-Contains various plots and figures created for the Thesis, for example
-a comparison of various activation functions, the charge collection, etc.
-
 ### Thesis
 
 All files (.tex, figures, etc.) for my Master's thesis.
 
 
-### Defense
+### Thesis Figures
 
-All files (.tex, figures, etc.) for my Master's talk.
+Contains various plots and figures created for the Thesis, for example
+a comparison of various activation functions, the charge collection, etc.
+
 
