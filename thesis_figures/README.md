@@ -1,6 +1,6 @@
 # Thesis Figures
 
-This directory contains the code used to generate one of the figures presented in my master's thesis.  
+This directory contains the code used to generate figures presented in my master's thesis.  
 Each script corresponds to one or more figures, and can be run independently to reproduce the plots.  
 
 ---
@@ -21,9 +21,9 @@ Each script corresponds to one or more figures, and can be run independently to 
 ## Usage
 
 ### Generate a Single Figure
-Run from root (inside legend200-ml-analysis/) any script directly, e.g.:
+Run from root (inside `legend200-ml-analysis/`) any script directly, e.g.:
 ```bash
-python -m thesis_figures.scripts.03_attenuation
+python -m thesis_figures.scripts.attenuation
 ```
 
 By default, outputs are saved in the working directory or as defined in each script.
@@ -31,7 +31,7 @@ By default, outputs are saved in the working directory or as defined in each scr
 ### Generate all Figures
 Run (again from root):
 ```bash
-python -m thesis_figures.plot_all
+python -m thesis_figures.make_all_figures
 ```
 
 ## Run Animations
@@ -50,8 +50,8 @@ For documentation, check out [Manim](https://github.com/manimCommunity/manim)
 * Always run all scripts from project root.
 
 * All data used for plotting (NIST attenuation tables, 
-    Ge-76 spectra, waveform examples) is stored in utils/.
+    Ge-76 spectra, waveform examples) is stored in `utils/`.
 
-* Shared helper functions are in utils/figures_utils.py.
+* Shared helper functions are in `utils/figures_utils.py`.
 
 * Animations are separated from static figures for clarity.
