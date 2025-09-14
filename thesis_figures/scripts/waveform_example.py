@@ -14,7 +14,7 @@ import json
 import matplotlib.pyplot as plt
 
 # --- Project modules ---
-from thesis_figures.utils import set_style
+from utils import set_style
 
 
 

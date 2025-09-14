@@ -10,11 +10,10 @@ import numpy as np
 import os
 
 # --- Third party ---
-from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
 # --- Project modules ---
-from thesis_figures.utils import set_style
+from utils import set_style
 
 
 

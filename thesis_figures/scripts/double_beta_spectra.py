@@ -18,7 +18,7 @@ from scipy.integrate import simps
 
 
 # --- Project modules ---
-from thesis_figures.utils import set_style
+from utils import set_style
 
 
 
