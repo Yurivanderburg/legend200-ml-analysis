@@ -13,15 +13,17 @@ as well as data preparation and plotting scripts for the associated thesis work.
 │   ├── data_prep_utils/           # Utilities for processing data
 │   ├── scripts/                   # Scripts <- **Run here**
 │   └── slurm_jobs/                # SLURM submission .sh files for the python code
-├── logs/                          # Logging for all python scripts 
+├── transformer_for_legend/        # Encoder-only Transformer implementation (not included)
 ├── physics_analysis/              # Core physics analysis
 │   ├── psd_efficiency/            # Pulse Shape Discrimination at Qbb
 │   ├── pulse_simulation/          # Pulse Shape Simulation codes 
 │   └── sensitivity_study/         # Bayesian sensitivity study for 0vbb decay half-life
-├── thesis/                        # LaTeX files for the Master's thesis
+├── thesis/                        # Source files for my Master's thesis
 ├── thesis_figures/                # Various Figures and Plots for the thesis
-├── defense/                       # LaTeX files for the Master's thesis defense talk
-└── utils/                         # Various utilities
+├── visualization/                 # Figures for the thesis, but data-dependent
+├── utils/                         # Global utilities
+└── logs/                          # Logging for all python scripts 
+
 ```
 
 ---
